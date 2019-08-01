@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron&display=swap');
 @font-face{
     font-family: Roboto;
     src: url(../assets/fonts/Roboto-Regular.ttf);
@@ -6,9 +7,26 @@
 .titleOrange{
     color: #FF6B00;   
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
+
 }
-@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron&display=swap');
+
+.space4{
+    letter-spacing: 0.145em;
+}
+
+.toolBox{
+    height: 150px;
+    width: 150px;
+    transform: rotate(-45deg);
+    display: flex;
+    background-color: #353535;
+    border: 2px solid #FF6B00;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    box-shadow: -10px 10px 7px rgba(0, 0, 0, 0.329);
+}
 
 body{
     background-color: #181818; 
