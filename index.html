@@ -9,41 +9,61 @@
         <!-- Título -->
         <title>MasterCode</title>
        
-        <!-- Bootstrap -->
+        <!-- Bootstrap & CSS-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
-
+    <header id="home">
         <!-- Menu -->
-        <ul>
-            <li>Home</li>
-            <li>Sobre</li>
-            <h1>Portfólio</h1>
-            <h1>Contato</h1>
-        </ul>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><span class="spanOrange spanLogo"><></span><span class="masterCode">MasterCode</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#customers">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                Navbar text with an inline element
+              </span>
+            </div>
+          </nav>
 
         <p>
-            Some Text Here 
-            To Improve All about 
-            The page and the Company
+            <span class="spanOrange">Some Text Here 
+            To</span> Improve <span class="spanOrange"> about 
+            The page and the</span> Company
         </p>
 
-        <button>Contact</button>
+        <a href="#contact"><button>Contact</button></a>
     </header>
 
     <!-- Corpo -->
     <section id="masterCodeTeam">
         <h1>MasterCode Team</h1>
 
+
+
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta purus eu volutpat sagittis. Mauris ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut nec convallis lorem, a dignissim velit. In elementum tellus vel dignissim consequat. Quisque scelerisque aliquam nibh et faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non enim et elit dignissim cursus vitae nec velit. Maecenas vestibulum bibendum ante sed congue. Mauris dapibus et ex ut viverra. Sed eu laoreet urna.
+            <span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Quisque porta purus eu volutpat sagittis. Mauris ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut nec convallis lorem, a dignissim velit. In elementum tellus vel dignissim consequat. Quisque scelerisque aliquam nibh et faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc non enim et elit dignissim cursus vitae nec velit. Maecenas vestibulum bibendum ante sed congue. Mauris dapibus et ex ut viverra. Sed eu laoreet urna.
         </p>
     </section>
 
-    <section id="about">
+    <section class="backgroundColorGray" id="about">
         <h1>Sobre</h1>
 
         <h3>Qual a missão da MasterCode?</h3>
@@ -71,7 +91,7 @@
         <h1>WEB</h1>
     </section>
 
-    <section id="customers">
+    <section class="backgroundColorGray" id="customers">
         <h1>Nossos Clientes</h1>
     </section>
 
@@ -103,12 +123,12 @@
     </section>
 
     <!-- Rodapé -->
-    <footer>
+    <footer class="backgroundColorGray">
         <ul>
             <li>Home</li>
             <li>Sobre</li>
-            <h1>Portfólio</h1>
-            <h1>Contato</h1>
+            <li>Portfólio</li>
+            <li>Contato</li>
         </ul>
     </footer>
 
