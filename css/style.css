@@ -15,6 +15,10 @@
     letter-spacing: 0.145em;
 }
 
+.navBlack{
+    background-color: #1C1C1C;
+}
+
 .toolBox{
     height: 150px;
     width: 150px;
