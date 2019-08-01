@@ -29,6 +29,7 @@
 }
 
 body{
+    margin-top: 80px;
     background-color: #181818; 
     color: white;
 }
@@ -38,6 +39,7 @@ button{
     color: white;
     border-radius: 15px;
     width: 150px;
+    border: 0px;
 }
 
 span.spanOrange{
