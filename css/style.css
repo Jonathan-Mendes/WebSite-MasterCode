@@ -8,3 +8,37 @@
     font-family: Roboto;
     font-weight: bold;
 }
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Orbitron&display=swap');
+
+body{
+    background-color: #181818; 
+    color: white;
+}
+
+button{
+    background-color: #FF6B00;
+    color: white;
+    border-radius: 15px;
+    width: 150px;
+}
+
+span.spanOrange{
+    color: #FF6B00;
+}
+
+span.spanLogo{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+span.masterCode{
+    font-family: 'Aldrich', sans-serif;
+}
+
+h1,h3{
+    color: #FF6B00;
+}
+
+.backgroundColorGray{
+    background-color: #353535
+}
