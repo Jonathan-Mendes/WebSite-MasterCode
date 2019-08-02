@@ -32,6 +32,12 @@
     box-shadow: -10px 10px 7px rgba(0, 0, 0, 0.329);
 }
 
+.teamMasterCode{
+    background-color: #414141;
+    width: 240px;
+    height: 300px; 
+}
+
 body{
     margin-top: 80px;
     background-color: #181818; 
@@ -60,4 +66,13 @@ h1,h3{
 
 header a{
     color: #FF6B00;
+}
+
+header a:hover{
+    color: white;
+}
+
+header ul{
+    position: relative;
+    left: 100;
 }
