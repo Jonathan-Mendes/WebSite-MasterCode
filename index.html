@@ -23,7 +23,7 @@
 
 <body>
     <!-- Cabeçalho -->
-    <header id="home" class="my-5 py-5 container">
+    <header id="home" class="container">
         <!-- Menu -->
         <nav class="navbar navbar-expand-lg navBlack fixed-top">
             <a class="navbar-brand" href="#"><img src="img/logo.png" width="179px" height="36px"></a>
@@ -32,7 +32,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto text-end">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -49,22 +49,45 @@
             </div>
         </nav>
 
-        <p class="space4">
-            <span class="spanOrange">
-                Some Text Here<br>
-                To</span> Improve <span class="spanOrange"> about<br>
-                The page and the</span> Company
-        </p>
+        <div class="grid">
+            <div class="row">
+                <div class="col-sm-5 text-center">
+                    <p class="space4 text-start mt-5 pt-5">
+                        <span class="spanOrange">
+                            Some Text Here<br>
+                            To</span> Improve <span class="spanOrange"> about<br>
+                            The page and the</span> Company
+                    </p>
+                    <a href="#contact"><button>Contact</button></a>
+                </div>
+                <div class="col-sm-7">
+                    <img class="img-fluid d-block mx-auto" src="img/photo_edit.png">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row  justify-content-center">
+            <div class="col-sm-4">
+                <p class="space4 text-start">
+                    <span class="spanOrange">
+                        Some Text Here<br>
+                        To</span> Improve <span class="spanOrange"> about<br>
+                        The page and the</span> Company
+                </p>
+                <a href="#contact"><button>Contact</button></a>
+            </div>
 
-        <a href="#contact"><button>Contact</button></a>
+            <div class="col-sm-5 text-center mx-auto">
+                <img class="img-fluid d-block mx-auto" src="img/photo_edit.png">
+            </div>
+        </div> -->
 
-        <!-- <img src="img/#"> -->
+
     </header>
 
     <!-- Corpo -->
     <section id="masterCodeTeam" class="my-5 py-5 container">
         <div class="grid">
-            <div class="row">
+            <div class="row py-3 my-3">
                 <div class="col col-lg-12">
                     <div class="titleOrange">
                         <h1 class="text-start">MasterCode Team</h1>
@@ -73,19 +96,41 @@
             </div>
         </div>
 
-        <div class="row my-4">
-            <div class="col col 3">
-                <div class="teamMasterCode"></div>
-            </div>
+        <div class="row my-4 justify-content-center">
+            <div class="col-sm-2 px-1 my-4 mx-3 text-center">
+                <div class="teamMasterCode my-3">
 
-            <div class="col col 3">
-                <div class="teamMasterCode">
-
+                </div>
+                <div class="textTeamMasterCode">
+                    Name
+                    <br>
+                    <span class="stackProf">Stack Professional</span>
+                    <br>
+                    <span class="stackProf">Stack Professional</span>
                 </div>
             </div>
 
-            <div class="col col-6">
-                <p class="space4">
+            <!-- Espaçamento -->
+            <div class="col-sm-1 px-1 my-4 mx-2"></div>
+
+            <div class="col-sm-2 px-1 my-4 mx-3 text-center">
+                <div class="teamMasterCode my-3">
+
+                </div>
+                <div class="textTeamMasterCode">
+                    Name
+                    <br>
+                    <span class="stackProf">Stack Professional</span>
+                    <br>
+                    <span class="stackProf">Stack Professional</span>
+                </div>
+            </div>
+
+            <!-- Espaçamento -->
+            <div class="col-sm-1 px-1 my-4 mx-2"></div>
+
+            <div class="col-sm-4 px-1 my-4 mx-3">
+                <p class="space4 text-justify smallText my-3">
                     <span class="spanOrange">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Quisque
                     porta purus
                     eu volutpat
@@ -102,37 +147,66 @@
             </div>
         </div>
 
-
     </section>
 
     <section class="backgroundColorGray" id="about">
         <div class="my-5 py-5 container">
+            <div class="grid">
+                <div class="row py-3 my-3">
+                    <div class="col col-lg-12">
+                        <div class="titleOrange">
+                            <h1 class="text-start">Sobre</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <h1>Sobre</h1>
+            <div class="row my-4 justify-content-center">
+                <div class="col-sm-5 px-1 my-4 mx-2">
+                    <div class="divAbout">
 
-            <h3>Qual a missão da MasterCode?</h3>
+                    </div>
 
-            <p class="space4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta purus eu volutpat sagittis.
-                Mauris
-                ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut nec convallis lorem, a
-                dignissim
-                velit. In elementum tellus vel dignissim consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.
-                Quisque porta purus eu volutpat sagittis. Mauris ullamcorper molestie nibh vitae sagittis. Suspendisse
-                et
-                felis tellus. Ut nec convallis lorem, a dignissim velit. In elementum tellus vel dignissim consequat.
-            </p>
+                </div>
 
+                <div class="col-sm-1 px-1 my-4 mx-2"></div>
 
-            <h3>Objetivo da MasterCode</h3>
-            <p class="space4">
-                Quisque scelerisque aliquam nibh et faucibus. Orci varius natoque penatibus et magnis dis parturient
-                montes,
-                nascetur ridiculus mus. Nunc non enim et elit dignissim cursus vitae nec velit. Maecenas vestibulum
-                bibendum
-                ante sed congue. Mauris dapibus et ex ut viverra. Sed eu laoreet urna.
-            </p>
+                <div class="col-sm-5 px-1 my-4 mx-2">
+                    <div>
+                        <h3>Qual a missão da MasterCode?</h3>
+
+                        <p class="space4 text-justify smallText my-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta purus eu volutpat
+                            sagittis.
+                            Mauris
+                            ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut nec convallis
+                            lorem, a
+                            dignissim
+                            velit. In elementum tellus vel dignissim consequat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                            Quisque porta purus eu volutpat sagittis. Mauris ullamcorper molestie nibh vitae sagittis.
+                            Suspendisse
+                            et
+                            felis tellus. Ut nec convallis lorem, a dignissim velit. In elementum tellus vel dignissim
+                            consequat.
+                        </p>
+                    </div>
+                    <div class="my-5">
+                        <h3>Objetivo da MasterCode</h3>
+
+                        <p class="space4 text-justify smallText my-4">
+                            Quisque scelerisque aliquam nibh et faucibus. Orci varius natoque penatibus et magnis dis
+                            parturient
+                            montes,
+                            nascetur ridiculus mus. Nunc non enim et elit dignissim cursus vitae nec velit. Maecenas
+                            vestibulum
+                            bibendum
+                            ante sed congue. Mauris dapibus et ex ut viverra. Sed eu laoreet urna.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -239,7 +313,7 @@
     </section>
 
     <section class="backgroundColorGray" id="customers">
-        
+
     </section>
 
     <section id="contact" class="pt-5 pb-5 mb-5 my-5">
@@ -338,7 +412,7 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="backgroundColorGray">
+    <footer class="page-footer font-small bg-dark pt-4 ">
         <div class="grid px-4">
             <div class="row">
                 <div class="col-sm-4">

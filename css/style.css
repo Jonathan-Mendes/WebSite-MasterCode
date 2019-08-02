@@ -4,11 +4,32 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+.ulNav{
+    position: relative;
+    right: 0;
+}
+
 .titleOrange{
     color: #FF6B00;   
     font-family: Roboto;
     font-weight: 700;
 
+}
+
+.smallText{
+    font-size: 14px;
+}
+
+.divAbout{
+    background-color: #1C1C1C;
+    box-shadow: -20px 20px #FF6B00;
+    width: 400px;
+    height: 400px;
+}
+
+.stackProf{
+    color: #414141;
+    font-family: Roboto;
 }
 
 .space4{
@@ -36,6 +57,11 @@
     background-color: #414141;
     width: 240px;
     height: 300px; 
+}
+
+
+.textTeamMasterCode{
+    width: 240px;
 }
 
 .cardBox{
