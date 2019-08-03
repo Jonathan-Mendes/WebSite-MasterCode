@@ -11,12 +11,17 @@
 
 }
 
+.masterCode{
+    font-size:40px;
+    opacity: .5;
+}
+
 .msg{
     font-size: 25px;
 }
 
 .img{
-    opacity: .3;
+    opacity: .5;
 }
 
 .smallText{
@@ -122,3 +127,21 @@ header ul{
     position: relative;
     left: 100;
 }
+
+.effect::after {
+    color: #FF6B00;
+    content: '|';
+    opacity: 1;
+    /* margin-left: 5px; */
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
