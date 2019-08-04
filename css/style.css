@@ -4,11 +4,31 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+.end{
+    position: relative;
+    right: 0px;
+}
+
+.button-colapse{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url('../img/button.png')
+}
+
 .titleOrange{
     color: #FF6B00;   
     font-family: Roboto;
     font-weight: 700;
 
+}
+
+.icon-color{
+    background-color: #FF6B00;
 }
 
 .masterCode{
@@ -91,7 +111,7 @@
 
 body{
     margin-top: 80px;
-    background-color: #181818; 
+    background-color: #181818;
     color: white;
 }
 
