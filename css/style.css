@@ -4,10 +4,30 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .end{
     position: relative;
     right: 0px;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border: none !important;
+    background-color: #FF6B00 !important;
+    opacity: 0.5;
+  }
 
 .button-colapse{
     display: inline-block;
@@ -152,7 +172,6 @@ header ul{
     color: #FF6B00;
     content: '|';
     opacity: 1;
-    /* margin-left: 5px; */
     display: inline-block;
     animation: blink .7s infinite;
   }

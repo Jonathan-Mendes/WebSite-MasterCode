@@ -1,6 +1,6 @@
 var div = document.getElementById('log');
 var textos = ['MasterCode'];
-
+window.onscroll = function() {scrollFunction()};
 
 function escrever(str, done) {
     var char = str.split('').reverse();
@@ -40,23 +40,15 @@ function rodape(conteudos, el) {
 }
 rodape(textos);
 
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
 
-// function typeWriter(elemento) {
-//     const textoArray = elemento.innerHTML.split('');
-//     elemento.innerHTML = '';
-//     textoArray.forEach((letra, i) => {
-//       setTimeout(() => elemento.innerHTML += letra, 75 * i);
-//     });
-//   }
-
-//   // Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
-//   // function typeWriter(elemento) {
-//   //   const textoArray = elemento.innerHTML.split('');
-//   //   elemento.innerHTML = '';
-//   //   for(let i = 0; i < textoArray.length; i++) {
-//   //     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-//   //   }
-//   // }
-
-//   const titulo = document.getElementById('log');
-//   typeWriter(titulo);
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
