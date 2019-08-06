@@ -8,6 +8,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.logoLeft{
+    position: relative;
+    left: 80px !important;
+}
+
+.ulRight{
+    position: absolute !important;
+    right: 100px !important;
+    font-size: 18px;
+}
+
 .end{
     position: relative;
     right: 0px;

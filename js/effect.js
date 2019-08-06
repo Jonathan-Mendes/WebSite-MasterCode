@@ -1,6 +1,9 @@
 var div = document.getElementById('log');
 var textos = ['MasterCode'];
+var click = false
 window.onscroll = function() {scrollFunction()};
+
+
 
 function escrever(str, done) {
     var char = str.split('').reverse();
@@ -51,4 +54,16 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+  }
+
+  function relative(){
+    btnColapse = document.getElementById("menu")
+    if(click){
+        btnColapse.className = 'navbar-nav ulRight';
+        click = false
+    }else{
+        btnColapse.className = 'navbar-nav';
+        click = true
+    }
+
   }
