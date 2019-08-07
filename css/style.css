@@ -4,8 +4,42 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+
+footer{
+    margin-top: 300px;
+    font-size: 15px;
+}
+
+#copy{
+    font-size: 12px;
+}
+
+.footerTitle{
+    color: #FF6B00;
+    font-size: 20px;
+}
+
+.redesSociais{;
+    font-size: 30px;
+    outline: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: #FF6B00 !important;
+    float: left;
+    margin: 10px;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.border-top{
+    border-top: 1px solid #FF6B00 !important;
+}
+
+.imgTeamMasterCode{
+    opacity: 0.6;
 }
 
 .logoLeft{
@@ -114,6 +148,7 @@ html {
 
 .teamMasterCode{
     background-color: #414141;
+    box-shadow: -10px 10px 7px rgba(0, 0, 0, 0.329);
     width: 240px;
     height: 300px; 
 }
@@ -146,6 +181,7 @@ body{
     color: white;
 }
 
+
 button{
     background-color: #FF6B00;
     color: white;
@@ -166,12 +202,23 @@ h1,h3{
     background-color: #353535
 }
 
-header a{
+header a, footer a{
+    text-decoration: none;
     color: #FF6B00;
 }
 
-header a:hover{
+header a:hover, footer a:hover{
+    text-decoration: none;
     color: white;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer li{
+    float: left;
+    margin: 10px;
 }
 
 header ul{
