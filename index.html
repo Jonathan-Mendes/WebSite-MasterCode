@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Descrição -->
+    <meta name="description" content="MasterCode - Desenvolvimento Web e Mobile.">
+
     <!-- Título -->
     <title>MasterCode</title>
 
@@ -14,25 +17,29 @@
     <link rel="icon" type="imagem/png" href="img/favicon.png" />
 
     <!-- Bootstrap & CSS-->
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Ícones -->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
     <!-- Cabeçalho -->
-    <header id="home" class="container circle">
+    <header id="home" class="container">
         <!-- Menu -->
         <nav class="navbar navbar-expand-lg navBlack fixed-top">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" width="179px" height="36px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <img class="logoLeft" src="img/logo.png" width="179px" height="36px">
+            <button class="navbar-toggler" id="btnColapse" onclick="relative()" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="button-colapse"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto text-end">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="menu" class="navbar-nav ulRight">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -48,6 +55,7 @@
                 </ul>
             </div>
         </nav>
+
 
         <div class="grid">
             <div class="row">
@@ -70,11 +78,14 @@
                 </div>
             </div>
         </div>
-
     </header>
 
     <!-- Corpo -->
     <section id="masterCodeTeam" class="my-5 py-5 container">
+        <button class="rounded-circle" onclick="topFunction()" id="myBtn" title="Go to top">
+            <i class="fas fa-arrow-alt-circle-up"></i>
+        </button>
+
         <div class="grid">
             <div class="row py-3 my-3">
                 <div class="col col-lg-12">
@@ -88,10 +99,10 @@
         <div class="row my-4 justify-content-center">
             <div class="col-sm-2 px-1 my-4 mx-3 text-center">
                 <div class="teamMasterCode my-3">
-
+                    <img class="imgTeamMasterCode" src="img/jonathan.jpg" width="240px" height="300px">
                 </div>
                 <div class="textTeamMasterCode">
-                    Name
+                    Jonathan Mendes
                     <br>
                     <span class="stackProf">Stack Professional</span>
                     <br>
@@ -107,7 +118,7 @@
 
                 </div>
                 <div class="textTeamMasterCode">
-                    Name
+                    Misael Kelviny
                     <br>
                     <span class="stackProf">Stack Professional</span>
                     <br>
@@ -120,7 +131,7 @@
 
             <div class="col-sm-4 px-1 my-4 mx-3">
                 <p class="space4 text-justify smallText my-3">
-                    <span class="spanOrange">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Quisque
+                    <span class="spanOrange">Time MasterCode</span> dolor sit amet, consectetur adipiscing elit. Quisque
                     porta purus
                     eu volutpat
                     sagittis. Mauris ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut nec
@@ -400,73 +411,91 @@
 
     </section>
 
-    <!-- Rodapé
-    <footer class="page-footer center-on-small-only pt-4 mt-2 bg-dark">
-        <div class="container">
-            <div class="row pt-5 mb-3 text-center d-flex justify-content-center">
-                <div class="col-md-2 mb-3">
-                    <h6 class="title font-bold"><a href="#!">Home</a></h6>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h6 class="title font-bold"><a href="#!">Sobre</a></h6>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h6 class="title font-bold"><a href="#!">Portfólio</a></h6>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <h6 class="title font-bold"><a href="#!">Contato</a></h6>
-                </div>
-            </div>
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem"></p>
-                </div>
-            </div>
-            <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-            <div class="row pb-3">
-                <div class="col-md-12 mx-auto text-center">
-                    <div class="footer-socials mb-5 flex-center">
-                        <a><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
-                        <a><i class="fa fa-linkedin fa-lg white-text mx-md-4"> </i></a>
-                        <a><i class="fa fa-instagram fa-lg white-text mx-md-4"> </i></a>
-                        <a><i class="fa fa-behance fa-lg white-text ml-md-4"> </i></a>
+    <!-- Rodapé -->
+    <footer class="page-footer font-small pt-4">
+        <div class="grid px-4">
+            <div class="row my-2">
+                
+                    <div class="col-sm-4">
+                            <span class="footerTitle">Contato</span>
+                            <br><br>
+                            Minas Gerais, Brasil
+                            <br>
+                            R. Argemiro Tesch Furtado, 42.<br>
+                            Pouso Alegre MG CEP: 37557-186<br>
+                            <span class="spanOrange">mastercode.dev@gmail.com</span>
+                            <!-- Tel. (35) xxxxxx -->
+                        </div>
+                <div class="col-sm-4">
+                    <div>
+                        <p >
+                            <span class="spanOrange">MasterCode</span> Design e tecnologia para impulsionar negócios digitais<br>
+                            <!-- Somos a <span class="spanOrange">MasterCode</span>, uma empresa especialista em design e desenvolvimento Web e Mobile<br>
+                            e que trabalha em projetos de Tecnologia e User Experience Design. -->
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="text-center">
-            <div class="container-fluid">
-                <p>© 2016 Copyright:MasterCode - Todos os direitos reservados a MasterCode desenvolvimento Web e
-                    Mobile</p>
-            </div>
-        </div>
-    </footer> -->
-    <footer class="page-footer text-center text-md-left mt-2 pt-5 bg-dark">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <h5 class="title mb-3"> <span><></span> MasterCode</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                
+                <div class="col-sm-4 text-center">
+                    <div><span class="footerTitle">Siga-nos nas redes sociais</span></div>
+                    <div>
+                    <div class="rounded-circle redesSociais">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <!-- <div class="rounded-circle redesSociais">
+                        <i class="fab fa-github"></i>
+                    </div> -->
+                    <div class="rounded-circle redesSociais">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="rounded-circle redesSociais">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <ul class="list">
-                        <li><h6 class="title font-bold"><a href="#!">Home</a></h6></li>
-                        <li><h6 class="title font-bold"><a href="#!">Sobre</a></h6></li>
-                        <li><h6 class="title font-bold"><a href="#!">Portfólio</a></h6></li>
-                        <li><h6 class="title font-bold"><a href="#!">Contato</a></h6></li>
+                </div>
+            </div>
+            <div class="row border-top my-2">
+                <div class="col-sm-4">
+                    <img src="assets/img/masterCode 2.png" width="200" height="50">
+
+                </div>
+                <div class="col-sm-4 align-text-bottom">
+                    <span id="copy">MasterCode &copy Copyright 2019. Todos os direitos reservados</span>
+                </div>
+                <div class="col-sm-4 ">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#customers">Portfólio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="container-fluid text-center">
-                <p>© 2016 Copyright:MasterCode - Todos os direitos reservados a MasterCode desenvolvimento Web e
-                    Mobile</p>
-            </div>
-        </div>
     </footer>
 
+    <!-- <script src="js/bootstrap.min.js"></script> -->
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="js/effect.js"></script>
 </body>
 
 <!-- JavaScript Bootstrap -->
