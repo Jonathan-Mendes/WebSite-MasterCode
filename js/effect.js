@@ -1,9 +1,7 @@
-var div = document.getElementById('log');
+var div = document.getElementById('mc');
 var textos = ['MasterCode'];
 var click = false
 window.onscroll = function() {scrollFunction()};
-
-
 
 function escrever(str, done) {
     var char = str.split('').reverse();
