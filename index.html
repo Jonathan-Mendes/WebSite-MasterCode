@@ -32,7 +32,7 @@
     <!-- Cabeçalho -->
     <header id="home" class="container">
         <!-- Menu -->
-        <nav class="navbar navbar-expand-lg navBlack fixed-top">
+        <nav class="navbar navbar-expand-lg navBlack fixed-top py-4">
             <img class="logoLeft" src="img/logo.png" width="179px" height="36px">
             <button class="navbar-toggler" id="btnColapse" onclick="relative()" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,17 +60,19 @@
         <div class="grid">
             <div class="row">
                 <div class="col-sm-5 mt-5 pt-5">
-                    <p class="space4 text-start msg">
+                    <p class="space4 text-center msg">
                         <span class="spanOrange">
                             Some Text Here<br>
                             To</span> Improve <span class="spanOrange"> about<br>
                             The page and the</span> Company
                     </p>
-                    <a href="#contact"><button>Contact</button></a>
+                    <div class="my-4 pt-5 d-flex justify-content-center align-items-center">
+                        <a href="#contact"><button type="button" class="btn btn-danger buttonMaster">Contact</button></a>
+                    </div>
                 </div>
                 <div class="col-sm-7 mt-5 pt-5 text-center">
-                    <div>
-                        <img class="img" src="img/banner.png" width="350" height="200">
+                    <div class="imageMaster">
+                        <img class="d-flex mx-auto imagemCode" src="img/banner.png">
                     </div>
                     <div>
                         <span class="masterCode" id="log"></span><span class="effect masterCode"></span>
@@ -318,7 +320,7 @@
 
     <section id="contact" class="pt-5 pb-5">
         <div class="bkimage"></div>
-        <div class="grid container">
+        <div class="grid container pt-5">
             <div class="row">
                 <div class="col-12 text-start">
                     <h2 class="titleOrange">Contato</h2>
@@ -374,7 +376,7 @@
             </div>
 
             <form>
-                <div class="form-row mt-5">
+                <div class="form-row mt-5 pt-5">
                     <div class="form-group col-md-12">
                         <label for="name">Nome</label>
                         <input type="text" class="form-control" id="name" placeholder="Seu Nome, Empresa...">
@@ -412,54 +414,54 @@
     </section>
 
     <!-- Rodapé -->
-    <footer class="page-footer font-small pt-4">
-        <div class="grid px-4">
-            <div class="row my-2">
-                
-                    <div class="col-sm-4">
-                            <span class="footerTitle">Contato</span>
-                            <br><br>
-                            Minas Gerais, Brasil
-                            <br>
-                            R. Argemiro Tesch Furtado, 42.<br>
-                            Pouso Alegre MG CEP: 37557-186<br>
-                            <span class="spanOrange">mastercode.dev@gmail.com</span>
-                            <!-- Tel. (35) xxxxxx -->
-                        </div>
+    <footer class="page-footer font-small pt-4 bg-dark h-100">
+        <div class="grid px-4 ">
+            <div class="row my-4">
                 <div class="col-sm-4">
+                    <span class="footerTitle">Contato</span>
+                    <br><br>
+                    Minas Gerais, Brasil
+                    <br>
+                    R. Argemiro Tesch Furtado, 42.<br>
+                    Pouso Alegre MG CEP: 37557-186<br>
+                    <span class="spanOrange">mastercode.dev@gmail.com</span>
+                    <!-- Tel. (35) xxxxxx -->
+                </div>
+                <div class="col-sm-4 d-flex align-items-center my-4 justify-content-center">
                     <div>
-                        <p >
-                            <span class="spanOrange">MasterCode</span> Design e tecnologia para impulsionar negócios digitais<br>
+                        <p>
+                            <span class="spanOrange">MasterCode</span> Design e tecnologia para impulsionar negócios
+                            digitais<br>
                             <!-- Somos a <span class="spanOrange">MasterCode</span>, uma empresa especialista em design e desenvolvimento Web e Mobile<br>
                             e que trabalha em projetos de Tecnologia e User Experience Design. -->
                         </p>
                     </div>
                 </div>
-                
-                <div class="col-sm-4 text-center">
+
+                <div class="col-sm-4 text-center ">
                     <div><span class="footerTitle">Siga-nos nas redes sociais</span></div>
-                    <div>
-                    <div class="rounded-circle redesSociais">
-                        <i class="fab fa-facebook-f"></i>
-                    </div>
-                    <!-- <div class="rounded-circle redesSociais">
+                    <div class="d-flex justify-content-center">
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <!-- <div class="rounded-circle redesSociais">
                         <i class="fab fa-github"></i>
                     </div> -->
-                    <div class="rounded-circle redesSociais">
-                        <i class="fab fa-instagram"></i>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    <div class="rounded-circle redesSociais">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                </div>
                 </div>
             </div>
-            <div class="row border-top my-2">
-                <div class="col-sm-4">
-                    <img src="assets/img/masterCode 2.png" width="200" height="50">
 
+            <div class="row border-top my-2 d-flex align-items-center">
+                <div class="col-sm-4 mx-auto d-flex justify-content-center">
+                    <img src="assets/img/masterCode 2.png" width="200" height="50">
                 </div>
-                <div class="col-sm-4 align-text-bottom">
+                <div class="col-sm-4 align-text-bottom justify-content-center text-center">
                     <span id="copy">MasterCode &copy Copyright 2019. Todos os direitos reservados</span>
                 </div>
                 <div class="col-sm-4 ">
