@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Ícones -->
+    <!-- <link rel="stylesheet/scss" type="text/css" href="css/sass.scss"> -->
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -59,7 +60,7 @@
 
         <div class="grid">
             <div class="row">
-                <div class="col-sm-5 mt-5 pt-5">
+                <div class="col-sm-6 mt-5 pt-5 ">
                     <p class="space4 text-center msg">
                         <span class="spanOrange">
                             Some Text Here<br>
@@ -71,7 +72,7 @@
                                 class="btn btn-danger buttonMaster">Contact</button></a>
                     </div>
                 </div>
-                <div class="col-sm-7 mt-5 pt-5 text-center">
+                <div class="col-sm-6 mt-5 pt-5 text-center">
                     <div class="imageMaster">
                         <img class="d-flex mx-auto imagemCode" src="img/banner.png">
                     </div>
@@ -101,15 +102,16 @@
 
         <div class="row my-4 justify-content-center">
             <div class="col-sm-2 px-1 my-4 mx-3 text-center">
-                <div class="teamMasterCode my-3">
-                    <img class="imgTeamMasterCode" src="img/jonathan.jpg" width="240px" height="300px">
+                <div class="teamMasterCode my-3 mx-auto">
+                    <img class="imgTeamMasterCode d-block mx-auto img-fluid" src="img/jonathan.jpg" width="240px"
+                        height="300px">
                 </div>
-                <div class="textTeamMasterCode">
+                <div class="textTeamMasterCode mx-auto">
                     Jonathan Mendes
                     <br>
-                    <span class="stackProf">Stack Professional</span>
+                    <span class="stackProf">Desenvolvedor FullStack Web</span>
                     <br>
-                    <span class="stackProf">Stack Professional</span>
+                    <span class="stackProf">Formado em Sistemas de Informação</span>
                 </div>
             </div>
 
@@ -117,15 +119,15 @@
             <div class="col-sm-1 px-1 my-4 mx-2"></div>
 
             <div class="col-sm-2 px-1 my-4 mx-3 text-center">
-                <div class="teamMasterCode my-3">
+                <div class="teamMasterCode my-3 mx-auto">
 
                 </div>
-                <div class="textTeamMasterCode">
+                <div class="textTeamMasterCode mx-auto">
                     Misael Kelviny
                     <br>
-                    <span class="stackProf">Stack Professional</span>
+                    <span class="stackProf">Desenvolvedor Full Stack Web</span>
                     <br>
-                    <span class="stackProf">Stack Professional</span>
+                    <span class="stackProf">Formado em Sistemas de Informação</span>
                 </div>
             </div>
 
@@ -213,7 +215,7 @@
         </div>
     </section>
 
-    <section id="tools" class="my-5 py-5 container">
+    <section id="tools" class="my-5 container">
         <div class="grid">
             <div class="row">
                 <div class="col-lg-12">
@@ -224,9 +226,10 @@
             </div>
             <div class="row my-4">
                 <div class="col-12">
-                    <p class="space4">Mauris ullamcorper molestie nibh vitae sagittis. Suspendisse et felis tellus. Ut
-                        nec convallis lorem, a
-                        dignissim velit. In elementum tellus vel dignissim consequat.</p>
+                    <p class="space4">Utilizamos as ferramentas de mais alto nível no mercado, para trazermos as
+                        melhores soluções para o seu negócio, ideia ou projetos! A mastercode tem o dever de entregar
+                        uma nova experiência ao usuário ou aplicação para ter o melhor resultado em nossos trabalhos.
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -236,23 +239,30 @@
             </div>
             <div class="row my-5 justify-content-center mx-auto">
                 <div class="col-sm-3 px-1 my-4 mx-auto text-center">
-                    <div class="toolBox"></div>
+                    <div class="toolBox">
+                        <img src="img/android.svg" width="60px" height="60px"
+                            class="img-fluid d-block mx-auto rotate-icon">
+                    </div>
                     <div class="mt-5 px-3">
                         <h6>Android Studio</h6>
-                        <span class="text-muted">Desenvolvimento de aplicações mobile nativas para plataformas
+                        <span class="text-muted">Desenvolvimento de aplicações móveis nativas para plataformas
                             android</span>
                     </div>
                 </div>
                 <div class="col-sm-3 px-1 my-4 mx-auto text-center">
                     <div class="toolBox">
+                        <img src="img/ioniclogo.png" width="60px" height="60px"
+                            class="img-fluid d-block mx-auto rotate-icon">
                     </div>
                     <div class="mt-5 px-3">
                         <h6>Ionic Angular</h6>
-                        <span class="text-muted">Aplicações mobile hibridas utilizando o framework</span>
+                        <span class="text-muted">Aplicações móveis hibridas utilizando o framework</span>
                     </div>
                 </div>
                 <div class="col-sm-3 px-1 my-4 mx-auto text-center">
                     <div class="toolBox">
+                        <img src="img/512px-React-icon.svg.png" width="60px" height="60px"
+                            class="img-fluid d-block mx-auto rotate-icon">
                     </div>
                     <div class="mt-5 px-3">
                         <h6>React-Native</h6>
@@ -262,6 +272,8 @@
                 </div>
                 <div class="col-sm-3 px-1 my-4 mx-auto text-center">
                     <div class="toolBox">
+                        <img style="filter: contrast(0.5);" src="img/1_U01ubQ9TrE1Zow5pkGHTfw.png" width="60px"
+                            height="60px" class="img-fluid d-block mx-auto rotate-icon">
                     </div>
                     <div class="mt-5 px-3">
                         <h6>PWA</h6>
@@ -278,7 +290,10 @@
                 </div>
                 <div class="row my-5 justify-content-center mx-auto">
                     <div class="col-sm-3 px-1 my-4 mx-auto text-center">
-                        <div class="toolBox"></div>
+                        <div class="toolBox">
+                            <img src="img/423b97b41c8b420d28e84f9b07a530ec.png" width="120px" height="120px"
+                                class="img-fluid d-block mx-auto rotate-icon">
+                        </div>
                         <div class="mt-5 px-3">
                             <h6>HTML5, CSS3</h6>
                             <span class="text-muted">Desenvolvimento de páginas estáticas para a web, do zero até a
@@ -287,6 +302,8 @@
                     </div>
                     <div class="col-sm-3 px-1 my-4 mx-auto text-center">
                         <div class="toolBox">
+                            <img src="img/angular-512.png" width="60px" height="60px"
+                                class="img-fluid d-block mx-auto rotate-icon">
                         </div>
                         <div class="mt-5 px-3">
                             <h6>Angular</h6>
@@ -295,7 +312,10 @@
                         </div>
                     </div>
                     <div class="col-sm-3 px-1 my-4 mx-auto text-center">
-                        <div class="toolBox"></div>
+                        <div class="toolBox">
+                            <img src="img/react.png" width="60px" height="60px"
+                                class="img-fluid d-block mx-auto rotate-icon">
+                        </div>
                         <div class="mt-5 px-3">
                             <h6>ReactJS</h6>
                             <span class="text-muted">A ferramenta em alta no mercado para desenvolvimento de aplicações
@@ -305,21 +325,77 @@
                     </div>
                     <div class="col-sm-3 px-1 my-4 mx-auto text-center">
                         <div class="toolBox">
+                            <img src="img/iconfinder_nodejs-512_339733.png" width="60px" height="60px"
+                                class="img-fluid d-block mx-auto rotate-icon">
                         </div>
                         <div class="mt-5 px-3">
-                            <h6>UI & UX</h6>
-                            <span class="text-muted">Criação de prototipação nos seus projetos</span>
+                            <h6>NodeJs</h6>
+                            <span class="text-muted">Principal ferramenta para o processo de suas aplicação tanto web
+                                quanto em móvel</span>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 
-    <section class="backgroundColorGray" id="customers">
+    <section class="backgroundColorGray py-5" id="customers">
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="titleOrange">Projetos</h2>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <p>Alguns de nossos projetos mais legais! Trabalhamos sempre para entregar ótimos resultados
+                            aos nossos clientes.</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12">
+                        <div class="card-deck">
+                            <div class="card bg-secondary shadow-lg ">
+                                <img class="card-img-top" src="img/univas.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sistema de Informação</h5>
+                                    <p class="card-text">Site criado como um projeto para o curso de sistemas de
+                                        informação da universidade do vale do sapucaí (UNIVAS) em 2019. Que mostra como
+                                        é o curso e um pouco mais sobre a faculdade.</p>
 
+                                    <a href="https://deliton.github.io/SIwebsite/" target="_blank" class="btn btn-success mt-4">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="card bg-secondary shadow-lg">
+                                <img class="card-img-top" src="img/plano.jpg" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Plano Contabilidade</h5>
+                                    <p class="card-text">Landing page para a empresa de contabilidade da cidade de Pouso
+                                        Alegre - Minas Gerais. Aonde a empresa mostra o seu serviço através de um site
+                                        moderno e com os melhores recursos da tecnologia web</p>
+                                    <a href="https://plano-contabilidade.com.br" target="_blank" class="btn btn-success mt-4">Visitar</a>
+                                </div>
+                            </div>
+                            <div class="card bg-secondary shadow-lg">
+                                <img class="card-img-top" src="img/trackseven.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Track7 - MyScore</h5>
+                                    <p class="card-text">Aplicativo híbrido criado para a empresa de telemetria e gestão
+                                        de frotas de ônibus. A aplicação é um projeto onde cria uma competição saúdavel
+                                        entre os colaboradores das frotas clientes da empresa.
+                                    </p>
+                                    <a href="https://play.google.com/store/apps/details?id=br.com.track7.app&hl=pt_BR" target="_blank" class="btn btn-success mt-4">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="pt-5 pb-5">
+    <section id="contact" class="pb-5">
         <div class="bkimage"></div>
         <div class="grid container pt-5">
             <div class="row">
@@ -330,8 +406,8 @@
             <div class="row mt-4">
                 <div class="col-md-3">
                     <p class="space4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta purus eu volutpat
-                        sagittis
+                        Quer desenvolver o seu projeto ? entre em contato conosco para desenvolvermos sua ideia juntos.
+                        Atendemos todos os dias da semana. nos mande e-mail, ligue ou entre em contato a baixo.
                     </p>
                 </div>
                 <div class="col-md-3 my-2">
@@ -376,40 +452,62 @@
                 </div>
             </div>
 
-            <form>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <form id="fs-frm" name="complaint-form" accept-charset="utf-8"
+                        action="https://formspree.io/mastercode.dev@gmail.com" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <label for="full-name">Nome Completo</label>
+                            <input type="text" name="name" id="full-name" placeholder="Seu Nome, Empresa..."
+                                required="">
+                            <label for="email-address">Email</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@email.com"
+                                required="">
+                            <label for="telephone">Telefone para contato</label>
+                            <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                            <label for="complaint">Mensagem</label>
+                            <textarea rows="6" name="complaint" id="complaint"
+                                placeholder="Observações e comentários que gostaria de fazer" required=""></textarea>
+                            <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <!-- <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/mastercode.dev@gmail.com" method="POST">
+                <fieldset id="fs-frm-inputs">
                 <div class="form-row mt-5 pt-5">
                     <div class="form-group col-md-12">
-                        <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Seu Nome, Empresa...">
+                        <label for="full-name">Nome</label>
+                        <input type="text" class="form-control" id="full-name" placeholder="Seu Nome, Empresa...">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email"
+                        <label for="email-address">Email</label>
+                        <input type="email" class="form-control" id="email-address"
                             placeholder="Seu Email para sabermos seu contato">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="phone">Telefone</label>
-                        <input type="text" class="form-control" id="phone" placeholder="(35) 99999-9999">
+                        <label for="telephone">Telefone</label>
+                        <input type="text" class="form-control" id="telephone" placeholder="(35) 99999-9999">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <label for="titulo">titulo do seu contato</label>
+                        <label for="titulo">título do seu contato</label>
                         <input type="text" class="form-control" id="titulo" placeholder="email@email.com">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <label for="obs">Observações</label>
-                        <textarea class="form-control" id="obs" rows="3"
+                        <label for="message">Observações</label>
+                        <textarea class="form-control" id="message" rows="3"
                             placeholder="Observações e comentários que gostaria de fazer"></textarea>
                     </div>
                 </div>
                 <div class="text-end justify-content-end position-absolute">
-                    <button type="submit" class="btn btn-success">Enviar</button>
-
+                    <button  id="email-subject" type="submit" class="btn btn-success">Enviar</button>
                 </div>
-            </form>
+            </form> -->
         </div>
 
     </section>
@@ -431,10 +529,8 @@
                 <div class="col-sm-4 d-flex align-items-center my-4 justify-content-center">
                     <div>
                         <p>
-                            <span class="spanOrange">MasterCode</span> Design e tecnologia para impulsionar negócios
-                            digitais<br>
-                            <!-- Somos a <span class="spanOrange">MasterCode</span>, uma empresa especialista em design e desenvolvimento Web e Mobile<br>
-                            e que trabalha em projetos de Tecnologia e User Experience Design. -->
+                            <span class="spanOrange">MasterCode</span> Design e tecnologia para impulsionar negócios de
+                            forma digital na web e em aplicações móveis.<br>
                         </p>
                     </div>
                 </div>
@@ -443,16 +539,16 @@
                     <div><span class="footerTitle">Siga-nos nas redes sociais</span></div>
                     <div class="d-flex justify-content-center">
                         <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/MasterCode.dev/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </div>
-                        <!-- <div class="rounded-circle redesSociais">
-                        <i class="fab fa-github"></i>
-                    </div> -->
-                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <div class="rounded-circle redesSociais">
+                            <a href="https://www.behance.net/mastercode1" target="_blank"><i class="fab fa-behance"></i></a>
                         </div>
                         <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
-                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/mastercode.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="rounded-circle redesSociais d-flex justify-content-center align-items-center">
+                            <a href="www.linkedin.com/in/mastercode-dev" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
