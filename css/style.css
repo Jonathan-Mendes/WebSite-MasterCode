@@ -177,6 +177,8 @@ a{
 .cardBox {
   background-color: #ff6b00;
   height: 200px;
+  display: grid;
+  padding: 20px;
 }
 
 .cardMaster {
