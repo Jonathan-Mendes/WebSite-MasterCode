@@ -118,12 +118,21 @@ html {
   width: 70%;
   height: 170px;
 }
+.sticky{
+  background-color: #ff6b00;
+  height: 830px;
+  width: 10px;
+}
+
+.routerServices{
+  right: 50%;
+}
 
 .divAbout {
-  background-color: #1c1c1c;
+  background-color: #ececec;
   box-shadow: -10px 10px #ff6b00;
   width: 100%;
-  height: 400px;
+  height: 420px;
 }
 
 .stackProf {
@@ -173,6 +182,8 @@ a{
   text-decoration: none;
   list-style: none;
 }
+
+
 
 .cardBox {
   background-color: #ff6b00;
@@ -271,7 +282,7 @@ footer a {
 header a:hover,
 footer a:hover {
   text-decoration: none;
-  color: white;
+  color: #ff6b00;
 }
 
 footer ul {
@@ -424,3 +435,7 @@ header ul {
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
 }
+
+
+
+
