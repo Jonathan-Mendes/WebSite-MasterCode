@@ -613,4 +613,6 @@ ul{
 
 .iconService{
   color: #ff6b00 !important;
+  position: absolute;
+  left: 10px;
 }
