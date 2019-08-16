@@ -127,7 +127,12 @@ html {
 .routerServices{
   right: 50%;
 }
-
+.point{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff6a03;
+}
 .divAbout {
   background-color: #ececec;
   box-shadow: -10px 10px #ff6b00;
@@ -435,7 +440,5 @@ header ul {
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
 }
-
-
 
 
