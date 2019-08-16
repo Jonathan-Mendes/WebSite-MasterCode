@@ -3,6 +3,7 @@ var textos = ['MasterCode'];
 var click = false
 window.onscroll = function() {scrollFunction()};
 
+// Efeito máquina de escrever
 function escrever(str, done) {
     var char = str.split('').reverse();
     var typer = setInterval(function() {
@@ -41,11 +42,14 @@ function rodape(conteudos, el) {
 }
 rodape(textos);
 
+// Efeito scroll
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("myBtn").style.display = "block";
+    document.getElementById("myBtnTop").style.display = "block";
+    document.getElementById("myBtnWhats").style.display = "block";
   } else {
-    document.getElementById("myBtn").style.display = "none";
+    document.getElementById("myBtnTop").style.display = "none";
+    document.getElementById("myBtnWhats").style.display = "none";
   }
 }
 
@@ -63,5 +67,4 @@ function topFunction() {
         btnColapse.className = 'navbar-nav';
         click = true
     }
-
-  }
+}

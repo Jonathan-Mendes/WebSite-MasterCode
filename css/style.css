@@ -57,7 +57,7 @@ html {
   right: 0px;
 }
 
-#myBtn {
+#myBtnTop {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -70,6 +70,22 @@ html {
   height: 70px;
   border: none !important;
   background-color: #ff6b00 !important;
+  opacity: 0.5;
+}
+
+#myBtnWhats{
+  /* display: none; */
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 30px;
+  outline: none;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border: none !important;
+  background-color: green !important;
   opacity: 0.5;
 }
 
