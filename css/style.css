@@ -9,6 +9,15 @@ footer {
   font-size: 15px;
 }
 
+.campoObrigatorio{
+  font-size: 13px;
+  color: #ff6b00;
+}
+
+.displayNone{
+  display: none;
+}
+
 #copy {
   font-size: 12px;
 }
@@ -627,12 +636,18 @@ header ul {
   }
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-.iconService{
+.iconService {
   color: #ff6b00 !important;
   position: absolute;
   left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .vc_row {
+    flex-direction: column-reverse;
+  }
 }

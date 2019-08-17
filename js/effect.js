@@ -1,12 +1,12 @@
 var div = document.getElementById('mc');
 var textos = ['MasterCode'];
 var click = false
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 // Efeito máquina de escrever
 function escrever(str, done) {
     var char = str.split('').reverse();
-    var typer = setInterval(function() {
+    var typer = setInterval(function () {
         if (!char.length) {
             clearInterval(typer);
             return setTimeout(done, 500);
@@ -19,7 +19,7 @@ function escrever(str, done) {
 function limpar(done) {
     var char = div.innerHTML;
     var nr = char.length;
-    var typer = setInterval(function() {
+    var typer = setInterval(function () {
         if (nr-- == 0) {
             clearInterval(typer);
             return done();
@@ -30,11 +30,11 @@ function limpar(done) {
 
 function rodape(conteudos, el) {
     var atual = -1;
-    function prox(cb){
+    function prox(cb) {
         if (atual < conteudos.length - 1) atual++;
         else atual = 0;
         var str = conteudos[atual];
-        escrever(str, function(){
+        escrever(str, function () {
             limpar(prox);
         });
     }
@@ -44,27 +44,63 @@ rodape(textos);
 
 // Efeito scroll
 function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("myBtnTop").style.display = "block";
-    document.getElementById("myBtnWhats").style.display = "block";
-  } else {
-    document.getElementById("myBtnTop").style.display = "none";
-    document.getElementById("myBtnWhats").style.display = "none";
-  }
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("myBtnTop").style.display = "block";
+        document.getElementById("myBtnWhats").style.display = "block";
+    } else {
+        document.getElementById("myBtnTop").style.display = "none";
+        document.getElementById("myBtnWhats").style.display = "none";
+    }
 }
 
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  }
+}
 
-  function relative(){
+function relative() {
     btnColapse = document.getElementById("menu")
-    if(click){
+    if (click) {
         btnColapse.className = 'navbar-nav ulRight';
         click = false
-    }else{
+    } else {
         btnColapse.className = 'navbar-nav';
         click = true
     }
+}
+
+// Enviar E-mail
+
+function sendEmail() {
+    inputName = document.getElementById("name")
+    inputEmail = document.getElementById("address")
+    textArea = document.getElementById("message")
+    listSpan = document.getElementsByClassName("campoObrigatorio")
+
+    if (textArea.value != "" && inputEmail != "" && inputName != "") {
+        sendSucess()
+    } else {
+        if (inputName.value === "") {
+            listSpan[0].className = "campoObrigatorio"
+        } else {
+            listSpan[0].className = "campoObrigatorio displayNone"
+        }
+
+        if (inputEmail.value === "") {
+            listSpan[1].className = "campoObrigatorio"
+        } else {
+            listSpan[1].className = "campoObrigatorio displayNone"
+        }
+
+        if (textArea.value === "") {
+            listSpan[2].className = "campoObrigatorio"
+        } else {
+            listSpan[2].className = "campoObrigatorio displayNone"
+        }
+    }
+
+}
+
+function sendSucess() {
+
 }
