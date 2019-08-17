@@ -215,7 +215,8 @@
             <div class="row my-5 mx-1 pb-4">
                 <div class="col-xl-6">
                     <div class="w-100 px-1">
-                        <img src="img/undraw_usability_testing_2xs4.svg" class="img-fluid d-block mx-auto" width="400" height="400">
+                        <img src="img/undraw_usability_testing_2xs4.svg" class="img-fluid d-block mx-auto" width="400"
+                            height="400">
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -264,7 +265,8 @@
             <div class="row my-5 pb-4">
                 <div class="col-xl-6">
                     <div class="w-100 px-1">
-                        <img src="img/undraw_referral_4ki4.svg" class="img-fluid d-block mx-auto" width="350" height="350">
+                        <img src="img/undraw_referral_4ki4.svg" class="img-fluid d-block mx-auto" width="350"
+                            height="350">
                     </div>
                 </div>
                 <div class="col-xl-6">
@@ -518,24 +520,26 @@
                     </div>
                 </div>
             </div>
-
+            <!-- https://script.google.com/macros/s/AKfycbxTjYGEoXac3tpkZfar-ZFOaWVKOg9V6l8_cwNj/exec -->
             <div class="row mt-5">
                 <div class="col-sm-12">
-                    <form id="fs-frm" name="complaint-form" accept-charset="utf-8"
-                        action="https://formspree.io/mastercode.dev@gmail.com" method="post">
+                    <!-- <form id="fs-frm" name="complaint-form" accept-charset="utf-8"
+                        action="https://formspree.io/mastercode.dev@gmail.com" method="post"> -->
+                    <form id="fs-frm" method="POST" action="https://script.google.com/macros/s/AKfycbxTjYGEoXac3tpkZfar-ZFOaWVKOg9V6l8_cwNj/exec" target="hiddenFrame">
                         <fieldset id="fs-frm-inputs">
                             <label for="full-name">Nome Completo</label>
-                            <input type="text" name="name" id="full-name" placeholder="Seu Nome, Empresa..."
+                            <input type="text" name="name" id="name" placeholder="Seu Nome, Empresa..."
                                 required="">
                             <label for="email-address">Email</label>
-                            <input type="email" name="_replyto" id="email-address" placeholder="email@email.com"
+                            <input type="email" name="_replyto" id="address" placeholder="email@email.com"
                                 required="">
                             <label for="telephone">Telefone para contato</label>
-                            <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                            <input type="telephone" name="phone" id="phone" placeholder="(555) 555-5555">
+                            <label for="subject">Título da sua mensagem</label>
+                            <input type="text" name="subject" id="email-subject" placeholder="Breve resumo de sua mensagem">
                             <label for="complaint">Mensagem</label>
-                            <textarea rows="6" name="complaint" id="complaint"
+                            <textarea rows="6" name="message" id="message"
                                 placeholder="Observações e comentários que gostaria de fazer" required=""></textarea>
-                            <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
                         </fieldset>
                         <input type="submit" value="Enviar">
                     </form>
@@ -619,6 +623,7 @@
         </div>
     </footer>
 
+    <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -635,8 +640,7 @@
 
     <!-- JavaScript Bootstrap -->
     <script src="js/bootstrap.js"></script>
-    <!-- envio de email -->
-    <script src="js/smtp.js"></script>
+
 
 </body>
 
