@@ -74,7 +74,7 @@ html {
 }
 
 #myBtnWhats{
-  /* display: none; */
+  display: none;
   position: fixed;
   bottom: 20px;
   left: 30px;
@@ -87,6 +87,10 @@ html {
   border: none !important;
   background-color: green !important;
   opacity: 0.5;
+}
+
+.midia:hover{
+  color: white !important;
 }
 
 .button-colapse {
