@@ -77,16 +77,16 @@ function sendEmail() {
     textArea = document.getElementById("message")
     listSpan = document.getElementsByClassName("campoObrigatorio")
 
-    if (textArea.value != "" && inputEmail != "" && inputName != "") {
-        sendSucess()
-    } else {
+        if((inputName.value != "" && textArea.value != "" && inputEmail.value != "" && inputEmail.indexOf("@") === -1){
+            sendSucess()
+        }
+
         if (inputName.value === "") {
             listSpan[0].className = "campoObrigatorio"
         } else {
             listSpan[0].className = "campoObrigatorio displayNone"
         }
-
-        if (inputEmail.value === "") {
+        if (inputEmail.value === "" || inputEmail.indexOf("@") == -1 ){
             listSpan[1].className = "campoObrigatorio"
         } else {
             listSpan[1].className = "campoObrigatorio displayNone"
@@ -97,10 +97,8 @@ function sendEmail() {
         } else {
             listSpan[2].className = "campoObrigatorio displayNone"
         }
-    }
-
 }
 
 function sendSucess() {
-
+    alert("E-mail enviado com sucesso")
 }
