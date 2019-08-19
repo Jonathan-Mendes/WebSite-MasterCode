@@ -75,30 +75,50 @@ function sendEmail() {
     inputName = document.getElementById("name")
     inputEmail = document.getElementById("address")
     textArea = document.getElementById("message")
+    inputPhone = document.getElementById("phone")
+    inputMsg = document.getElementById("email-subject")
     listSpan = document.getElementsByClassName("campoObrigatorio")
+    let enviado = 0
 
-        if((inputName.value != "" && textArea.value != "" && inputEmail.value != "" && inputEmail.indexOf("@") === -1){
-            sendSucess()
-        }
+    if (inputName.value === "") {
+        listSpan[0].className = "campoObrigatorio"
+    } else {
+        listSpan[0].className = "campoObrigatorio displayNone"
+        enviado += 1
+    } 
+    
+    if (inputEmail.value === "" || inputEmail.value.indexOf("@") === -1) {
+        listSpan[1].className = "campoObrigatorio"
+    } else {
+        listSpan[1].className = "campoObrigatorio displayNone"
+        enviado += 1
+    }
 
-        if (inputName.value === "") {
-            listSpan[0].className = "campoObrigatorio"
-        } else {
-            listSpan[0].className = "campoObrigatorio displayNone"
-        }
-        if (inputEmail.value === "" || inputEmail.indexOf("@") == -1 ){
-            listSpan[1].className = "campoObrigatorio"
-        } else {
-            listSpan[1].className = "campoObrigatorio displayNone"
-        }
+    if (textArea.value === "") {
+        listSpan[2].className = "campoObrigatorio"
+    } else {
+        listSpan[2].className = "campoObrigatorio displayNone"
+        enviado += 1
+    }
 
-        if (textArea.value === "") {
-            listSpan[2].className = "campoObrigatorio"
-        } else {
-            listSpan[2].className = "campoObrigatorio displayNone"
-        }
+    if(enviado === 3){
+        abrirPopUp()
+        // inputName.value = ''
+        // inputEmail.value = ''
+        // inputPhone.value = ''
+        // inputMsg.value = ''
+        // textArea.value = ''
+    }
 }
 
-function sendSucess() {
-    alert("E-mail enviado com sucesso")
+
+function abrirPopUp() {
+    var openPopUp = document.getElementById('popup')
+    openPopUp.style.display = 'block'
+
+}
+
+function fecharPopUp() {
+    var closePopUp = document.getElementById('popup')
+    closePopUp.style.display = 'none'
 }

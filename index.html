@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body id="corpo">
     <!-- Cabeçalho -->
     <header id="home" class="container">
         <!-- Menu -->
@@ -447,7 +447,7 @@
                                     <p class="card-text">Landing page para a empresa de contabilidade da cidade de Pouso
                                         Alegre - Minas Gerais. Aonde a empresa mostra o seu serviço através de um site
                                         moderno e com os melhores recursos da tecnologia web</p>
-                                    <a href="https://plano-contabilidade.com.br" target="_blank"
+                                    <a href="https://planocontabilidade.000webhostapp.com/" target="_blank"
                                         class="btn btn-success mt-4">Visitar</a>
                                 </div>
                             </div>
@@ -531,18 +531,22 @@
                             <span class="campoObrigatorio displayNone">Campo obrigatório</span>
                             <input type="text" name="name" id="name" placeholder="Seu Nome, Empresa..."
                                 required="">
+
                             <label for="email-address">Email <span class="spanOrange">*</span></label>
                             <span class="campoObrigatorio displayNone">Campo obrigatório</span>
                             <input type="email" name="_replyto" id="address" placeholder="email@email.com"
                                 required="">
+
                             <label for="telephone">Telefone para contato</label>
-                            <input type="telephone" name="phone" id="phone" placeholder="(555) 555-5555">
+                            <input type="telephone" name="phone" id="phone" placeholder="(555) 5555-5555">
                             <label for="subject">Título da sua mensagem</label>
                             <input type="text" name="subject" id="email-subject" placeholder="Breve resumo de sua mensagem">
+
                             <label for="complaint">Mensagem <span class="spanOrange">*</span></label>
                             <span class="campoObrigatorio displayNone">Campo obrigatório</span>
                             <textarea rows="6" name="message" id="message"
-                                placeholder="Observações e comentários que gostaria de fazer" required=""></textarea>
+                                placeholder="Observações e comentários que gostaria de fazer" required="">
+                            </textarea>
                         </fieldset>
                         <input type="submit" value="Enviar" onclick="sendEmail()">
                     </form>
@@ -625,6 +629,15 @@
             </div>
         </div>
     </footer>
+
+
+    <div id="popup" class="text-center align-items-center">
+        <div>
+        <p>E-mail Enviado com Sucesso!</p>
+        <i class="fas fa-check-circle my-3" id="confirmacao"></i>
+        <button type="button" id="btnOk" class="btn btn-outline-success" onclick="fecharPopUp()">OK</button>
+        </div>
+    </div>
 
     <iframe name="hiddenFrame" width="0" height="0" style="display: none;"></iframe>
     <!-- <script src="js/bootstrap.min.js"></script> -->
